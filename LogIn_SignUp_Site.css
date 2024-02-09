@@ -1,0 +1,40 @@
+h1 { 
+    border: 4px dotted rgb(145, 255, 0); 
+    padding: 25px; 
+    font-variant: small-caps; 
+    font-weight: bold; 
+    font-style: bold; 
+    font-family: Forte; 
+    letter-spacing: 2px; 
+    color: rgb(87, 206, 156); 
+}
+
+body {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
+    padding: 14px;
+}
+
+*.Ueberschrift2 {
+    padding: 20px; 
+    font-weight: bold;
+}
+
+*.Ueberschrift3 {
+    padding: 18px; 
+    font-weight: bold;
+}
+
+#attention {
+    font-weight: bold; 
+    padding: 16px; 
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+#register-form {
+    display: none;
+}

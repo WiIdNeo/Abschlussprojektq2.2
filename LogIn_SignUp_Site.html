@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login/Registrierung</title>
+	<link rel="stylesheet" type="text/css" href="LogIn_SignUp_Site.css">
+</head>
+<body>
+	<button onclick="showLogin()">Anmelden</button>
+	<button onclick="showRegister()">Registrieren</button>
+
+	<form id="login-form" action="http://localhost:8888/cgi-bin/logIn.py" method="post">
+		<h2>Anmelden</h2>
+		<label for="Benutzername">Benutzername:</label>
+		<input type="text" id="Benutzername" name="Benutzername"><br><br>
+		<label for="Password">Passwort:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<input type="submit" value="Anmelden">
+	</form>
+
+	<form id="register-form" action="http://localhost:8888/cgi-bin/registry.py" method="post">
+		<h2>Registrieren</h2>
+		<label for="Benutzername">Benutzername:</label>
+		<input type="text" id="Benutzername" name="Benutzername"><br><br>
+		<label for="Passwort">Passwort:</label>
+		<input type="password" id="Passwort" name="Passwort"><br><br>
+		<label for="Geburtsjahr">Geburtsjahr:</label>
+		<input type="date" id="Geburtsjahr" name="Geburtsjahr"><br><br>
+		<input type="submit" value="Registrieren">
+		
+	</form>
+
+	<script>
+		function showLogin() {
+			document.getElementById("login-form").style.display = "block";
+			document.getElementById("register-form").style.display = "none";
+		}
+
+		function showRegister() {
+			document.getElementById("login-form").style.display = "none";
+			document.getElementById("register-form").style.display = "block";
+		}
+	</script>
+</body>
+</html>

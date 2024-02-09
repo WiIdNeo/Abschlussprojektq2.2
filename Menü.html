@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title> Musikbibliotek </title>
+   <link rel="stylesheet" type="text/css" href="Wilkommensseite.css">
+   <meta name="viewport" content="with=device-with, initial-scale=1.0">
+   
+  </head>
+  <body>
+    <h1> Musikdatenbank - Die Vielfalt der Musik! 
+      <div class="dropdown" style="float: right;">
+        <button onclick="BurgerMenu()" class="dropbtn">
+          <img src="./Bilder/BurgerMenu.png">
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="LogIn_SignUp_Site.html">SingUp / LogIn</a>
+          <a href="MusicLibary">Libary</a>
+          <a href="Account.html">Account 3</a>
+        </div>
+      </div>
+    </h1>
+	<p> </p>
+	<p> </p>
+	<p> </p>
+    <p id="textsettings"> Unsere Neuzugänge: </p>
+	
+<table border="0">
+  <tr>
+    <th> 
+      <a href="Hurra, die Welt geht unter! - Lied.html">
+      <button>
+        <img id="bild" src= https://th.bing.com/th/id/OIP.gVBCPq6TdtbsRNGD3Y5YGAHaIp?rs=1&pid=ImgDetMain/>
+        <p>K.I.Z- - Hurra, die Welt geht unter</p>
+      </button> 
+    </a>
+    </th>
+
+    <th> 
+      <table border = "0"> 
+        <th>
+          <img id="spaceForBackground" src=""> 
+        </th> 
+      </table> 
+    </th>
+
+    <th> 
+      <a href="Pizza.html">
+      <button>
+        <img id="bild" src= https://th.bing.com/th/id/R.389aa21c437df0a74e704bc56849569d?rik=9XbijkIXpruP1g&riu=http%3a%2f%2fwww.track4-info.de%2fblog%2fwp-content%2fuploads%2f2017%2f01%2funspecified.jpg&ehk=i5RFEI0O4IUm3XabKA5DlyzvCOnXQ85ViG5HTlsAyZM%3d&risl=&pid=ImgRaw&r=0 />
+        <p>Antilopen Gang - Pizza</p>
+      </button>
+    </a>
+    </th>
+  </tr>
+  <tr> <th><div id="tableSpace"></div> </th></tr>
+
+  <tr>
+    <th> 
+      <a href="In the End.html">
+      <button>
+        <img id="bild" src= https://lastfm.freetls.fastly.net/i/u/ar0/7e2052e324fd6753725da8b05bcf4c37.jpg/>
+        <p>Linkin Park - In the End</p>
+      </button> 
+    </a>
+    </th>
+
+    <th> 
+      <table border = "0"> 
+        <th>
+          <img id="spaceForBackground" src=""> 
+        </th> 
+      </table> 
+    </th>
+
+    <th> 
+      <a href="Papercut.html">
+      <button>
+        <img id="bild" src= https://pic.baike.soso.com/ugc/baikepic2/17924/20200623003458-159828557_jpeg_1000_1000_212625.jpg/300 />
+        <P>Linkin Park - Papercut</P>
+      </button>
+    </a>
+    </th>
+  </tr>
+  <tr> <div id="tableSpace"></div></tr>
+</table>
+
+<table border="0">
+  <tr>
+    <th> 
+      <a href="Maguma Overture.html">
+      <button>
+        <img id="bild" src= "./Bilder/Anet - Maguma Overture.png"/>
+        <p>Arenanet - Maguma Overture</p>
+      </button> 
+    </a>
+    </th>
+    <th> <div id="tableSpace"></div></th>
+    <th> 
+      <a href="Beat It.html">
+      <button>
+        <img id="bild" src= https://th.bing.com/th/id/R.7e36e0f736dc2ed7116b457a6c0ab0af?rik=n3HjLZ5Do4YD7g&riu=http%3a%2f%2fimages.genius.com%2fceb1ad5f941d020a5db86755610a6ec7.953x953x1.jpg&ehk=suZsJmt%2fVE1TReJUy7lf2DNBSmVOQtGvtx%2fPE8Tf4uQ%3d&risl=&pid=ImgRaw&r=0 />
+        <p>Michal Jackson - Beat It</p>
+      </button>
+    </a>
+    </th>
+    <th> <div id="tableSpace"></div></th>
+    <th> 
+      <a href="Hellwach Sowas von da.html">
+      <button>
+        <img id="bild" src= "./Bilder/Casper - nur liebe, immer.png"/>
+        <p> Casper - So was von da / Hellwach</p>
+      </button> 
+    </a>
+    </th>
+    <th> <div id="tableSpace"></div></th>
+    <th> 
+      <a href="Till its over.html">
+      <button>
+        <img id="bild" src= https://th.bing.com/th/id/OIP.fyi_jhHwOVuOE9nnIG2tdAAAAA?rs=1&pid=ImgDetMain />
+        <p> Tristam - Till it's over</p>
+      </button>
+    </a>
+    </th>
+    <th> <div id="tableSpace"></div></th>
+    <th> 
+      <a href="Fall Out Boy - Immortals.html">
+      <button>
+        <img id="bild" src= "./Bilder/Fall Out Boy - American Beauty, American Psycho.png" />
+        <p> Fall Out Boy - Immortals</p>
+      </button>
+    </a>
+    </th>
+  </tr>
+  <tr> <div id="tableSpace"></div></tr>
+
+
+</table>
+
+
+
+
+
+<script>
+
+
+function BurgerMenu() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
